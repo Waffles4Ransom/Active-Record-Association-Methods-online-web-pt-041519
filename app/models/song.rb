@@ -8,6 +8,6 @@ class Song < ActiveRecord::Base
 
   def drake_made_this
     # when this method is called it should assign the song's artist to Drake
-    Artist.find_or_create()
+    Artist.find_or_create(name: "Drake")
   end
 end
